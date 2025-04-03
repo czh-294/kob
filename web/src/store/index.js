@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
-import MoudleUser from './user'
-
+import ModuleUser from './user'
 
 export default createStore({
   state: {
@@ -12,6 +11,6 @@ export default createStore({
   actions: {
   },
   modules: {
-    user: MoudleUser, // 引入 User 模块
+    user: ModuleUser,
   }
 })

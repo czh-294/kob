@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import { GameMap } from '@/assets/scripts/GameMap';
-import { onMounted, ref } from 'vue';
+import { GameMap } from "@/assets/scripts/GameMap";
+import { ref, onMounted } from 'vue'
 
 export default {
     setup() {
@@ -14,7 +14,7 @@ export default {
         let canvas = ref(null);
 
         onMounted(() => {
-            new GameMap(canvas.value.getContext('2d'), parent.value);
+            new GameMap(canvas.value.getContext('2d'), parent.value)
         });
 
         return {
